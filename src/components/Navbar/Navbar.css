@@ -1,0 +1,137 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: #f2f2f2bf;
+  padding: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+  border-bottom: 1px solid #bcbcbc0c;
+
+}
+
+.logo-img {
+  height: 50px;
+  object-fit: cover;
+}
+
+.navbar-links {
+  top: 100%;
+  display: flex;
+  transition: all 0.3s ease;
+}
+
+.navbar-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  padding: 0 2.5rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #f2f2f2;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-links li a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #ffffff;
+}
+
+.sign-in-button {
+  background-image: linear-gradient(to right, #bcbcbc 100%, #bcbcbc 100%);
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #000;
+  transition: background-image 0.3s ease-in-out;
+}
+
+.sign-in-button:hover {
+  background-image: linear-gradient(to right, #bcbcbc 100%, #ffffff 100%);
+}
+
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.open {
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(20, 20, 20, 0.75);
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .navbar-links ul li a {
+    display: block;
+  }
+
+  .navbar-links.expanded {
+    display: block;
+  }
+
+  .navbar-links.expanded {
+    animation: slideDown 0.5s ease forwards;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
