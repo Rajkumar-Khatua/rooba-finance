@@ -4,6 +4,9 @@
   align-items: center;
   background-color: transparent;
   color: #f2f2f2bf;
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(20, 20, 20, 0.75);
   padding: 1.5rem;
   position: fixed;
   top: 0;
@@ -12,7 +15,6 @@
   z-index: 1000;
   box-sizing: border-box;
   border-bottom: 1px solid #bcbcbc0c;
-
 }
 
 .logo-img {
