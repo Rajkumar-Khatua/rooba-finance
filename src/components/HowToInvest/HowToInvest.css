@@ -1,0 +1,127 @@
+.HTV-container {
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+    /* align-items: center; */
+    height: 100vh;
+    justify-content: center;
+    padding: 0px 40px;
+}
+.HTV-title{
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+.left-pane {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center; /* Center the content vertically */
+}
+
+.right-pane {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.step {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.step.active {
+  border-left: 3px solid rgba(67, 117, 251, 1);
+}
+
+.step-title {
+  font-weight: bold;
+  border-bottom: 1px solid rgba(18, 18, 18, 0.25);
+  padding: 10px 0;
+}
+
+.step-description {
+  margin-bottom: 20px;
+}
+
+.step-images {
+  position: relative;
+  height: 60%; /* Adjust as needed */
+}
+
+.main-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.main-image:nth-of-type(1) {
+  opacity: 1;
+}
+
+.child-image {
+  position: absolute;
+  width: auto;
+  right: 0;
+  transition: all 0.5s ease;
+}
+
+.child-image:nth-of-type(1) {
+  top: 20%;
+  right: 5%;
+}
+
+.child-image:nth-of-type(2) {
+  top: -10%;
+  right: -10%;
+}
+.child-image:nth-of-type(3) {
+  top: 4%;
+  right: -5%;
+  height: 200px;
+}
+
+.child-image:nth-of-type(4) {
+  top: -10%;
+  right: 10%;
+  height: 200px;
+  z-index: 1; 
+}
+button {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+.arrow {
+  color: black;
+}
+@media screen and (max-width: 1080px) {
+    .HTV-container {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0px;
+    }
+    .HTV-title{
+        font-size: 48px;
+    }
+    .right-pane {
+        display: none;
+    }
+    .left-pane {
+        flex: 1;
+        padding: 0px 20px;
+    }
+}
+    

@@ -14,7 +14,8 @@
   width: 100%;
   z-index: 1000;
   box-sizing: border-box;
-  border-bottom: 1px solid #bcbcbc0c;
+  transition: all 0.3s ease;
+
 }
 
 .logo-img {
@@ -65,26 +66,17 @@
 .toggle-button {
   display: none;
   flex-direction: column;
-  justify-content: space-between;
-  height: 21px;
   background: transparent;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.bar {
-  height: 3px;
-  width: 25px;
-  background-color: #fff;
-  margin: 3px 0;
-}
+.icon-menu{
+  color: #f2f2f2;
+  font-size: 1.5rem;
 
-.open {
-  transform: rotate(45deg);
-  transition: transform 0.3s ease;
 }
-
 @media (max-width: 768px) {
   .toggle-button {
     display: flex;

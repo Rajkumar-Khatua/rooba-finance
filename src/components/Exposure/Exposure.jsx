@@ -30,24 +30,27 @@ const cards = [
 
 const Exposure = () => {
   return (
-    <div className="Ex-mainContainer">
-      <div className="container">
-        <div className="Ex-title-Container">
-          <span className="EX-Title">Why you need exposure </span>
-          <span className="Ex-ExtraTxt">to private markets</span>
-        </div>
-        <div className="Ex-cards-container">
-          <div className="Ex-cards">
-            {cards.map((card, index) => (
-              <div key={index} className="Ex-card">
-                <h2 className="Ex-card-title">{card.title}</h2>
-                <span className="Ex-card-text">{card.text}</span>
-              </div>
-            ))}
+    <>
+      <div className="Ex-mainContainer">
+        <div className="container">
+          <div className="Ex-title-Container">
+            <span className="EX-Title">Why you need exposure </span>
+            <span className="Ex-ExtraTxt">to private markets</span>
+          </div>
+          <div className="Ex-cards-container">
+            <div className="Ex-cards">
+              {cards.map((card, index) => (
+                <div key={index} className="Ex-card">
+                  <h2 className="Ex-card-title">{card.title}</h2>
+                  <span className="Ex-card-text">{card.text}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <hr />
+    </>
   );
 };
 

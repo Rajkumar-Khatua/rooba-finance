@@ -8,7 +8,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-
+import "./LineChart.css";
 // Sample data
 const data = [
   { year: "2001", privateEquity: 1, sp500: 1 },
@@ -23,7 +23,7 @@ const data = [
 
 const AnimateLineChart = () => {
   return (
-    <ResponsiveContainer width="100%" height={400}>
+    <ResponsiveContainer width="100%" height={400} className="graph">
       <LineChart
         data={data}
         margin={{
