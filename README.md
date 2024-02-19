@@ -3,7 +3,7 @@
 This project is a landing page for Rooba Finance, built using the following technologies:
 
 - React: A JavaScript library for building user interfaces.
-- Material Icons: A collection of icons that can be used in web projects.
+- React Icons: A collection of icons that can be used in web projects.
 - CSS: A stylesheet language used for describing the look and formatting of a document written in HTML.
 - Recharts.JS: A charting library built with React and D3.
 

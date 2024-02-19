@@ -11,6 +11,7 @@ import { GrVmMaintenance } from "react-icons/gr";
 import { GiWoodenFence } from "react-icons/gi";
 import { AiOutlinePlus } from "react-icons/ai";
 import { MdCall } from "react-icons/md";
+import { IoLocationOutline } from "react-icons/io5";
 
 const Discover_Section = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -82,12 +83,19 @@ const Discover_Section = () => {
         </div>
         <div className="dis_right">
           <div className="dis_card">
-            <div className="dis-img">
+            <div className="dis-img-container">
               <img
                 src="/discover.png"
                 alt="discover"
                 className="dis-card-img"
               />
+              <div class="image-text-top-left">
+                <span className="image-text">Greensteps I</span>
+                <span className="image-text2">
+                  <IoLocationOutline />
+                  Alwar, Rajasthan
+                </span>
+              </div>
             </div>
             <div className="dis-card-information">
               <div className="tags-container">
@@ -143,7 +151,7 @@ const Discover_Section = () => {
                 </div>
                 <div className="dis-cta">
                   <button className="dis-cta-btn1">
-                    <AiOutlinePlus color="white"/>
+                    <AiOutlinePlus color="white" />
                     Invest Now
                   </button>
                   <button className="dis-cta-btn2">

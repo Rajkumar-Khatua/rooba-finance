@@ -15,7 +15,6 @@
   z-index: 1000;
   box-sizing: border-box;
   transition: all 0.3s ease;
-
 }
 
 .logo-img {
@@ -55,12 +54,8 @@
   background-image: linear-gradient(to right, #bcbcbc 100%, #bcbcbc 100%);
   padding: 0.5rem 1rem;
   border: none;
-  color: #000;
+  color: #000 !important;
   transition: background-image 0.3s ease-in-out;
-}
-
-.sign-in-button:hover {
-  background-image: linear-gradient(to right, #bcbcbc 100%, #ffffff 100%);
 }
 
 .toggle-button {
@@ -72,23 +67,26 @@
   transition: all 0.3s ease;
 }
 
-.icon-menu{
+.icon-menu {
   color: #f2f2f2;
   font-size: 1.5rem;
-
 }
-@media (max-width: 768px) {
+@media (max-width: 855px) {
   .toggle-button {
     display: flex;
   }
-
+  @media (max-width: 1024px) {
+    .navbar-links li {
+      padding: 0 1rem;
+    }
+  }
   .navbar-links {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    backdrop-filter: blur(16px) saturate(180%);
+    backdrop-filter: blur(10px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(20, 20, 20, 0.75);
     padding-top: 1rem;
