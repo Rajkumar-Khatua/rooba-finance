@@ -27,13 +27,13 @@ To run the project, follow these steps:
 1. Clone the repository using the following command:
 
    ```bash
-   git clone
+   git clone https://github.com/Rajkumar-Khatua/rooba-finance.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd rooba-finance-landing-page
+   cd rooba-finance
    ```
 
 3. Install the project dependencies:
@@ -57,7 +57,7 @@ To build the project, follow these steps:
 1. Navigate to the project directory:
 
    ```bash
-   cd rooba-finance-landing-page
+   cd rooba-finance
    ```
 
 2. Build the project:
